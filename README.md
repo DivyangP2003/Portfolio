@@ -1,7 +1,6 @@
-# Modern Portfolio Website
+# Modern Portfolio Website 🔗 [Link](https://pulsemeet.vercel.app)  
 
-![Portfolio Preview](https://github.com/DivyangP2003/portfolio/raw/main/public/images/portfolio-cover.png)
-![Live Demo](https://portfolio-divyangpalshetkar.vercel.app)
+![Portfolio Preview](./public/images/portfolio-cover.png)
 
 ## 🚀 Overview
 
