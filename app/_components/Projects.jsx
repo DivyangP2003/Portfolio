@@ -109,7 +109,7 @@ export default function Projects() {
       image: "/images/slooze-cover.jpeg",
       technologies: ["Python", "Pandas", "NumPy", "Matplotlib", "Seaborn", "Jupyter Notebook", "Time-Series Analysis"],
       liveUrl: "",
-      githubUrl: "https://github.com/DivyangP2003/SloozeChallenge.git",
+      githubUrl: "https://github.com/DivyangP2003/SloozeChallenge",
       duration: "5 days",
       team: "Solo project (Take-home challenge)",
       features: [
@@ -136,8 +136,8 @@ export default function Projects() {
         "A cutting-edge portfolio website built with the latest web technologies. Features smooth animations, dark mode support, responsive design, and optimized performance. The site showcases projects, skills, and professional journey with an engaging user experience.",
       image: "/images/portfolio-cover.png",
       technologies: ["Next.js", "Tailwind CSS", "Framer Motion", "Vercel", "JavaScript"],
-      liveUrl: "https://portfolio.vercel.app",
-      githubUrl: "#",
+      liveUrl: "https://portfolio-divyangpalshetkar.vercel.app",
+      githubUrl: "https://github.com/DivyangP2003/Portfolio",
       duration: "July 2025",
       team: "Solo project",
       features: [
