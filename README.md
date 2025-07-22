@@ -4,7 +4,7 @@
 
 ## 🚀 Overview
 
-A modern, interactive portfolio website built with Next.js, featuring a 3D hero section, interactive animations, dark/light mode, and an AI-powered chatbot assistant. This portfolio showcases projects, skills, and professional experience in an engaging and responsive design.
+A modern, interactive portfolio website built with Next.js, featuring a **3D hero section**, **interactive animations**, **dark/light mode**, and an **AI-powered chatbot assistant**. This portfolio showcases projects, skills, and professional experience in an engaging and responsive design.
 
 ## ✨ Features
 
