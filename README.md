@@ -1,6 +1,6 @@
 # Modern Portfolio Website 🔗 [Link](https://pulsemeet.vercel.app)  
 
-![Portfolio Preview](./public/images/portfolio-cover.png)
+![Portfolio Preview]()
 
 ## 🚀 Overview
 
