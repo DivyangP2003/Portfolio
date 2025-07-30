@@ -166,7 +166,7 @@ export default function Projects() {
         "Time-Series Analysis",
       ],
       liveUrl: "",
-      githubUrl: "https://github.com/DivyangP2003/SloozeChallenge.git",
+      githubUrl: "https://github.com/DivyangP2003/SloozeChallenge",
       duration: "5 days",
       team: "Solo project (Take-home challenge)",
       features: [
@@ -193,13 +193,7 @@ export default function Projects() {
       longDescription:
         "A cutting-edge portfolio website built with the latest web technologies. Features smooth animations, dark mode support, responsive design, and optimized performance. The site showcases projects, skills, and professional journey with an engaging user experience.",
       image: "/images/portfolio-cover.png",
-      technologies: [
-        "Next.js",
-        "Tailwind CSS",
-        "Framer Motion",
-        "Vercel",
-        "JavaScript",
-      ],
+      technologies: ["Next.js", "Tailwind CSS", "Framer Motion", "Vercel", "JavaScript"],
       liveUrl: "https://portfolio.vercel.app",
       githubUrl: "#",
       duration: "July 2025",

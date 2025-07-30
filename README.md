@@ -1,36 +1,45 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Modern Portfolio Website 🔗 [Link](https://pulsemeet.vercel.app)  
 
-## Getting Started
+![Portfolio Preview](./public/images/portfolio-cover.png)
 
-First, run the development server:
+## 🚀 Overview
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+A modern, interactive portfolio website built with Next.js, featuring a **3D hero section**, **interactive animations**, **dark/light mode**, and an **AI-powered chatbot assistant**. This portfolio showcases projects, skills, and professional experience in an engaging and responsive design.
+
+## ✨ Features
+
+- **Interactive 3D Hero Section** - Dynamic tech-themed animations and particles
+- **Dark/Light Theme** - Seamless theme switching with local storage persistence
+- **Responsive Design** - Optimized for all devices from mobile to desktop
+- **Smooth Animations** - Page transitions and scroll animations using Framer Motion
+- **AI Chatbot Assistant** - Gemini AI-powered chatbot that answers questions about projects and skills
+- **Project Showcase** - Detailed project cards with modal views for in-depth information
+- **Interactive Timeline** - Visual representation of education and career journey
+- **Resume Section** - Comprehensive display of skills, education, and experience
+- **Contact Form** - Functional contact form with validation and feedback
+
+## 🛠️ Technologies Used
+
+- **Frontend**: Next.js, React, TypeScript, Tailwind CSS
+- **UI Components**: shadcn/ui
+- **Animations**: Framer Motion
+- **3D Graphics**: Custom Canvas Animations
+- **AI Integration**: Google Gemini API
+- **Deployment**: Vercel
+
+## 📋 Project Structure
+
 ```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+portfolio/
+├── action/
+│   ├── contact-email.js/ # Resend email
+├── app/                  # Next.js app directory
+│   ├── api/              # API routes for chatbot and contact form
+│   ├── components/       # React components
+│   ├── globals.css       # Global styles
+│   ├── layout.jsx        # Root layout component
+│   └── page.jsx          # Main page component
+├── public/               # Static assets
+│   └── images/           # Image assets
+└── package.json          # Project dependencies
+```
