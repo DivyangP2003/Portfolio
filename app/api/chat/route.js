@@ -1,7 +1,7 @@
-import { GoogleGenerativeAI } from "@google/generative-ai"
-import { NextResponse } from "next/server"
+import { GoogleGenerativeAI } from "@google/generative-ai";
+import { NextResponse } from "next/server";
 
-const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY)
+const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
 
 const portfolioContext = `
 You are Divyang Palshetkar's AI assistant on his portfolio website. You have comprehensive knowledge about Divyang and can also answer general questions.
@@ -199,17 +199,20 @@ INSTRUCTIONS:
 6. Be friendly and professional
 7. If asked about availability, mention he's open to opportunities
 8. Always provide contact information when requested: **palshetkardivyang@gmail.com**
-`
+`;
 
 export async function POST(request) {
   try {
-    const { message } = await request.json()
+    const { message } = await request.json();
 
     if (!message) {
-      return NextResponse.json({ error: "Message is required" }, { status: 400 })
+      return NextResponse.json(
+        { error: "Message is required" },
+        { status: 400 }
+      );
     }
 
-    const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" })
+    const model = genAI.getGenerativeModel({ model: "gemini-2.5-flash" });
 
     const chat = model.startChat({
       history: [
@@ -226,15 +229,17 @@ export async function POST(request) {
           ],
         },
       ],
-    })
+    });
 
-    const result = await chat.sendMessage(message)
-    const response = await result.response
-    const text = response.text()
+    const result = await chat.sendMessage(message);
+    const text = result.response.text();
 
-    return NextResponse.json({ response: text })
+    return NextResponse.json({ response: text });
   } catch (error) {
-    console.error("Chat API error:", error)
-    return NextResponse.json({ error: "Failed to process your message. Please try again." }, { status: 500 })
+    console.error("Chat API error:", error);
+    return NextResponse.json(
+      { error: "Failed to process your message. Please try again." },
+      { status: 500 }
+    );
   }
 }
