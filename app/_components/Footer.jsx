@@ -18,7 +18,7 @@ export default function Footer() {
             <h3 className="text-2xl font-bold bg-gradient-to-r from-cyan-400 via-blue-400 to-purple-400 bg-clip-text text-transparent">
               Divyang Palshetkar
             </h3>
-            <p className="text-gray-400 mt-2">Full-Stack Developer & UI/UX Designer</p>
+            <p className="text-gray-400 mt-2">Data Scientist & Full-Stack Engineer</p>
           </motion.div>
 
           <motion.div

@@ -9,27 +9,21 @@ export default function Timeline() {
       type: "education",
       title: "Master of Technology",
       organization: "Indian Institute Of Technology (IIT), Jodhpur",
-      period: "2025–2026 (Expected)",
-      description: "",
+      period: "2025–2026",
+      description: "Department Rank: 1",
       icon: GraduationCap,
     },
 
     {
       type: "internship",
-      title: "AI & Traffic Analysis",
+      title: "AI & Traffic Analytics Intern",
       organization: "AICOE Project, Ministry of Education",
       period: "May 2024 – July 2024",
-      description:
-        "Analyzed 150+ hours of real-time traffic footage using TRAZER, applied Generative Causal AI for digital twin modeling, and integrated models into a React & Node.js dashboard to improve infrastructure planning by 40%.",
-      icon: Briefcase,
-    },
-    {
-      type: "internship",
-      title: "Geospatial Analytics and Groundwater Recharging",
-      organization: "Jal Jeevan Mission, Ministry of Jal Shakti",
-      period: "May 2024 – July 2024",
-      description:
-        "Mapped 40+ dry borewells using QGIS and Global Mapper, developed 3D groundwater recharge systems, and created REST APIs for GIS-integrated analytics dashboards.",
+      description: [
+        "Developed a large-scale computer vision and analytics pipeline to process 150+ hours of traffic footage across 16 smart-city locations, enabling automated extraction of vehicle counts, speed profiles, congestion levels, and flow metrics.",
+        "Applied statistical modelling, clustering, and anomaly detection to identify traffic patterns, peak-load behaviors, and irregular mobility events for data-driven urban planning.",
+        "Experimented with generative AI and agent-based digital-twin simulations to model traffic flows and support predictive infrastructure planning.",
+      ],
       icon: Briefcase,
     },
     {
@@ -37,7 +31,8 @@ export default function Timeline() {
       title: "Bachelor of Technology",
       organization: "Indian Institute Of Technology (IIT), Jodhpur",
       period: "2021–2025",
-      description: "Achieved CGPA of 8.24 with Departmental Rank of 4.",
+      description:
+        "Graduated with a CGPA of 8.24. Achieved Department Rank: 4.",
       icon: GraduationCap,
     },
     {
@@ -46,7 +41,7 @@ export default function Timeline() {
       organization: "",
       period: "2021",
       description:
-        "Qualified among the top 1% of over 1 million aspirants in India's most competitive engineering entrance exam.",
+        "Qualified among the top 1% of over one million candidates in India's most competitive engineering entrance exam.",
       icon: Award,
     },
     {
@@ -63,102 +58,92 @@ export default function Timeline() {
       organization: "Jindal Vidya Mandir, Salav (CBSE)",
       period: "2017–2018",
       description:
-        "Scored 97.4% and was awarded a CBSE Certificate of Merit for being in the top 0.1%.",
+        "Scored 97.4% and received the CBSE Certificate of Merit for being in the top 0.1%.",
       icon: GraduationCap,
     },
   ];
 
-  const getTypeColor = (type) => {
-    switch (type) {
-      case "education":
-        return "from-blue-500 to-cyan-500";
-      case "work":
-        return "from-purple-500 to-pink-500";
-      case "achievement":
-        return "from-green-500 to-emerald-500";
-      case "internship":
-        return "from-yellow-500 to-yellow-500/30";
-      default:
-        return "from-gray-500 to-gray-600";
-    }
+  const typeColor = {
+    education: "from-blue-500 to-cyan-500",
+    internship: "from-yellow-500 to-yellow-300",
+    achievement: "from-green-500 to-emerald-500",
   };
 
   return (
-    <section id="journey" className="py-20 bg-gray-50 dark:bg-gray-900">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="journey" className="py-24 bg-white dark:bg-gray-900">
+      <div className="max-w-4xl mx-auto px-6">
+        {/* Header */}
         <motion.div
-          initial={{ opacity: 0, y: 50 }}
+          initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
+          transition={{ duration: 0.5 }}
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
+          <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-3">
             My Journey
           </h2>
-          <p className="text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-            A timeline of my education and key achievements in the world of
-            technology.
+          <p className="text-gray-600 dark:text-gray-300 max-w-xl mx-auto">
+            A timeline of my academic path, technical experiences, and
+            achievements.
           </p>
         </motion.div>
 
+        {/* Vertical Timeline */}
         <div className="relative">
-          {/* Timeline line */}
-          <div className="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-gradient-to-b from-blue-500 to-purple-500 rounded-full"></div>
+          {/* Vertical Line */}
+          <div className="absolute left-6 top-0 bottom-0 w-1 bg-gradient-to-b from-blue-500 to-purple-500 rounded-full"></div>
 
-          <div className="space-y-12">
-            {timelineData.map((item, index) => (
+          <div className="space-y-12 ml-16">
+            {timelineData.map((item, idx) => (
               <motion.div
-                key={index}
-                initial={{ opacity: 0, x: index % 2 === 0 ? -50 : 50 }}
+                key={idx}
+                initial={{ opacity: 0, x: -20 }}
                 whileInView={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.6, delay: index * 0.1 }}
+                transition={{ duration: 0.6, delay: idx * 0.1 }}
                 viewport={{ once: true }}
-                className={`flex items-center ${
-                  index % 2 === 0 ? "flex-row" : "flex-row-reverse"
-                }`}
+                className="relative"
               >
-                <div
-                  className={`w-1/2 ${
-                    index % 2 === 0 ? "pr-8 text-right" : "pl-8 text-left"
-                  }`}
-                >
-                  <motion.div
-                    whileHover={{ scale: 1.02 }}
-                    className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow"
-                  >
-                    <div
-                      className={`inline-flex items-center px-3 py-1 rounded-full text-sm font-medium text-white bg-gradient-to-r ${getTypeColor(
-                        item.type
-                      )} mb-3`}
-                    >
-                      <item.icon className="w-4 h-4 mr-2" />
-                      {item.type.charAt(0).toUpperCase() + item.type.slice(1)}
-                    </div>
-                    <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
-                      {item.title}
-                    </h3>
-                    <p className="text-blue-600 dark:text-blue-400 font-medium mb-2">
-                      {item.organization}
-                    </p>
-                    <p className="text-sm text-gray-500 dark:text-gray-400 mb-3">
-                      {item.period}
-                    </p>
-                    <p className="text-gray-600 dark:text-gray-300">
-                      {item.description}
-                    </p>
-                  </motion.div>
-                </div>
-
-                {/* Timeline dot */}
+                {/* Node */}
                 <motion.div
-                  whileHover={{ scale: 1.2 }}
-                  className={`w-4 h-4 bg-gradient-to-r ${getTypeColor(
-                    item.type
-                  )} rounded-full border-4 border-white dark:border-gray-900 shadow-lg z-10`}
+                  whileHover={{ scale: 1.15 }}
+                  className={`absolute -left-[3.1rem] top-2 w-8 h-8 rounded-full shadow-lg border-4 border-white dark:border-gray-900 bg-gradient-to-r ${typeColor[item.type]}`}
                 ></motion.div>
 
-                <div className="w-1/2"></div>
+                {/* Card */}
+                <div className="p-6 bg-white dark:bg-gray-800 rounded-xl shadow-lg border border-gray-200 dark:border-gray-700 hover:shadow-2xl transition-all cursor-default">
+                  <div
+                    className={`inline-flex items-center px-3 py-1 rounded-full text-sm font-medium text-white bg-gradient-to-r ${typeColor[item.type]} mb-4`}
+                  >
+                    <item.icon className="w-4 h-4 mr-2" />
+                    {item.type.charAt(0).toUpperCase() + item.type.slice(1)}
+                  </div>
+
+                  <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
+                    {item.title}
+                  </h3>
+
+                  <p className="text-blue-600 dark:text-blue-400 font-medium">
+                    {item.organization}
+                  </p>
+
+                  <p className="text-sm text-gray-500 dark:text-gray-400 mb-3">
+                    {item.period}
+                  </p>
+
+                  {/* Bullet description */}
+                  {Array.isArray(item.description) ? (
+                    <ul className="space-y-2 text-gray-700 dark:text-gray-300 list-disc ml-4">
+                      {item.description.map((line, i) => (
+                        <li key={i}>{line}</li>
+                      ))}
+                    </ul>
+                  ) : (
+                    <p className="text-gray-700 dark:text-gray-300">
+                      {item.description}
+                    </p>
+                  )}
+                </div>
               </motion.div>
             ))}
           </div>

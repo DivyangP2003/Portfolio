@@ -24,6 +24,7 @@ import { motion } from "framer-motion";
 
 export default function Resume() {
   const [activeSection, setActiveSection] = useState("overview");
+  const [activeProjectFilter, setActiveProjectFilter] = useState("All");
 
   const personalInfo = {
     name: "Divyang Deepak Palshetkar",
@@ -31,10 +32,10 @@ export default function Resume() {
     email: "palshetkardivyang@gmail.com",
     linkedin: "https://www.linkedin.com/in/divyang-palshetkar-11198a338/",
     github: "https://github.com/DivyangP2003",
-    degree: "Bachelor of Technology",
+    degree: "B.Tech-M.Tech (Dual Degree)",
     institute: "Indian Institute of Technology Jodhpur",
     CGPA: "8.24/10",
-    deptRank: "4",
+    deptRank: "1",
   };
 
   const education = [
@@ -44,7 +45,7 @@ export default function Resume() {
       board: "IIT JODHPUR",
       score: "Pursuing",
       year: "2025",
-      highlight: "",
+      highlight: "Department Rank: 1",
     },
     {
       degree: "B.Tech",
@@ -72,133 +73,276 @@ export default function Resume() {
 
   const workExperience = [
     {
-      title: "AICOE Project, Ministry of Education",
+      title: "AI & Traffic Analytics Intern",
       role: "Internship",
       location: "IIT Jodhpur",
-      duration: "May 2024 - July 2024",
+      duration: "May 2024 – July 2024",
       certificate: true,
       achievements: [
-        "Conducted in-depth analysis of traffic patterns and vehicular movement across 16 strategic locations, processing 150+ hours of real-time footage using TRAZER software",
-        "Extracted key metrics such as vehicle count, speed, lane discipline, and congestion trends to assess traffic flow efficiency",
-        "Collaborated with teams to implement Generative AI-powered digital twin technology for infrastructure planning, improving decision-making by 40%",
-        "Integrated Generative Causal AI models with a web-based React & NodeJS application",
+        "Built a large-scale computer vision and analytics pipeline to process 150+ hours of traffic footage from 16 smart-city locations.",
+        "Automated extraction of actionable traffic metrics including vehicle counts, speed profiles, congestion levels, and lane-flow behavior.",
+        "Performed statistical modeling, clustering, and anomaly detection to uncover mobility patterns and peak-hour traffic dynamics.",
+        "Explored generative AI and agent-based digital-twin simulations to model traffic flows and support predictive infrastructure planning.",
       ],
     },
-    {
-      title: "Jal Jeevan Mission, Ministry of Jal Shakti",
-      role: "Internship",
-      location: "Rajasthan",
-      duration: "May 2024 - July 2024",
-      certificate: true,
-      achievements: [
-        "Conducted water surveys and mapped 40+ dry borewells using GPS, QGIS, and Global Mapper to optimize groundwater recharge",
-        "Ensured compliance with environmental standards for sustainable water resource management",
-        "Designed 3D filtration models and horizontal recharge techniques, improving groundwater replenishment efficiency by 30%",
-        "Developed REST APIs to integrate GIS data with an analytics dashboard",
-      ],
-    },
+    // {
+    //   title: "Jal Jeevan Mission, Ministry of Jal Shakti",
+    //   role: "Internship",
+    //   location: "Rajasthan",
+    //   duration: "May 2024 - July 2024",
+    //   certificate: true,
+    //   achievements: [
+    //     "Conducted water surveys and mapped 40+ dry borewells using GPS, QGIS, and Global Mapper to optimize groundwater recharge",
+    //     "Ensured compliance with environmental standards for sustainable water resource management",
+    //     "Designed 3D filtration models and horizontal recharge techniques, improving groundwater replenishment efficiency by 30%",
+    //     "Developed REST APIs to integrate GIS data with an analytics dashboard",
+    //   ],
+    // },
   ];
 
   const projects = [
+    // 1. MOST IMPORTANT — Agentic + Financial AI
     {
-      title: "CookSmartAI – AI Powered Recipe & Meal Planner",
-      date: "May 2025",
-      type: "Full-Stack Project",
+      category: "AI",
+      title:
+        "AI Market Intelligence Platform — Multi-Agent Financial Analytics System",
+      date: "Oct 2025",
+      type: "AI + Financial Data Science",
       technologies: [
-        "Next.js",
-        "React",
-        "Tailwind CSS",
-        "Prisma ORM",
-        "Supabase",
-        "Clerk",
-        "Gemini AI",
-        "Pollination AI",
-        "Hugging Face",
-        "cron-job.org",
+        "Python",
+        "Gemini",
+        "LLMs",
+        "Streamlit",
+        "Pandas",
+        "Statsmodels",
+        "Plotly",
       ],
-      liveDemo: "https://cook-smart-ai.vercel.app",
-      github: "https://github.com/DivyangP2003/CookSmartAI",
+      liveDemo: "https://aifinanceagentllm.streamlit.app/",
+      github: "https://github.com/DivyangP2003/ai_finance_agent_llm",
       description: [
-        "Built a fully responsive, AI-powered culinary platform that generates recipes from ingredients, creates personalized meal plans with dietary preferences and budgets, and performs deep nutritional analysis with AI insights",
-        "Integrated AI-powered image generation and food image scanning using Pollination AI + Hugging Face, a global recipe hub with advanced filters, and location-aware meal suggestions with real-time time zone detection",
-        "Implemented secure authentication using Clerk, scalable PostgreSQL backend with Supabase + Prisma, and daily recipe rating updates via CRON jobs",
+        "Built a multi-agent financial intelligence system (Market, Risk, Sentiment, Fundamentals, News, Portfolio) enabling analysts to generate insights 10× faster.",
+        "Engineered automated data pipelines for 500+ tickers using OHLCV data, macro indicators, news streams, and corporate fundamentals.",
+        "Implemented volatility modeling, VaR/CVaR risk metrics, drawdowns, and portfolio optimization simulations improving analytical accuracy by 35%.",
+        "Developed rich Plotly dashboards enabling real-time exploratory financial analysis.",
       ],
     },
 
+    // 2. Agentic AI System
     {
-      title: "ExpensIQ – AI-Powered Personal Finance Platform",
-      date: "May 2025",
-      type: "Full-Stack Project",
+      category: "AI",
+      title: "Multimodal AI Travel Planning Agent",
+      date: "Jul 2025",
+      type: "Agentic AI",
+      technologies: ["Python", "LangChain", "Llama", "Geopy"],
+      github: "https://github.com/DivyangP2003/ai-agent-travel-planner",
+      description: [
+        "Developed an autonomous LLM agent capable of multi-step reasoning and tool calling for optimized itinerary generation.",
+        "Integrated geo-data, travel APIs, routing constraints, and preference scoring to produce contextual travel plans.",
+        "Implemented agent memory, dynamic task decomposition, and real-time environment awareness.",
+      ],
+    },
+
+    // 3. Data Engineering — High relevance
+    {
+      category: "Data Engineering",
+      title: "Swiggy — End-to-End Data Engineering Pipeline",
+      date: "Aug 2025",
+      type: "Data Engineering / ETL Project",
+      technologies: [
+        "Python",
+        "SQL",
+        "Snowflake",
+        "ETL",
+        "Medallion Architecture",
+      ],
+      github: "https://github.com/DivyangP2003/SloozeChallenge.git",
+      description: [
+        "Designed a production-grade ETL pipeline with Medallion Architecture (Bronze → Silver → Gold).",
+        "Built dimension/fact models with incremental loading & audit logging, reducing pipeline latency by 40%.",
+        "Created automated KPI pipelines for delivery efficiency analyses enabling BI dashboards with <1s query time.",
+      ],
+    },
+
+    // 4. Data Warehouse Project
+    {
+      category: "Data Engineering",
+      title: "Data Warehouse & Analytics Project",
+      date: "Jul 2025",
+      type: "Analytics Engineering",
+      technologies: ["MS SQL Server", "ETL", "Star Schema"],
+      github: "https://github.com/DivyangP2003/sql-data-warehouse",
+      description: [
+        "Architected a scalable DWH with Bronze-Silver-Gold structured modeling.",
+        "Designed star-schema fact/dimension tables optimized for analytical workloads.",
+        "Implemented SQL performance optimizations improving query speed by 60%.",
+      ],
+    },
+
+    // 5. Data Science — Forecasting
+    {
+      category: "Data Science",
+      title: "Inventory Optimization & Sales Analytics",
+      date: "Apr 2025",
+      type: "Forecasting",
+      technologies: ["Python", "Pandas", "Time-Series"],
+      github: "https://github.com/DivyangP2003/SloozeChallenge.git",
+      description: [
+        "Built a demand forecasting pipeline with EOQ optimization and seasonal decomposition.",
+        "Performed ABC classification and peak-season analysis reducing simulated stockouts by 25%.",
+      ],
+    },
+
+    // 6. Full-Stack + AI in Finance
+    {
+      category: "Full-Stack",
+      title: "ExpensIQ — AI-Powered Personal Finance",
+      date: "Oct 2025",
+      type: "Full-Stack + AI",
       technologies: [
         "Next.js",
-        "Prisma ORM",
-        "Inngest",
-        "Arkjet",
+        "TypeScript",
+        "Prisma",
         "Supabase",
         "Gemini AI",
+        "OCR",
+        "Inngest",
       ],
       liveDemo: "https://expensiq.vercel.app",
       github: "https://github.com/DivyangP2003/expensiq",
       description: [
-        "Developed a full-stack, AI-powered personal finance platform with features like income/expense tracking, multi-account budgeting, receipt scanning using Gemini AI + OCR, and monthly financial summaries with Recharts visualizations and AI-generated savings insights",
-        "Implemented recurring transaction automation, real-time budget alerts via Resend + Inngest, secure Google authentication using Clerk and bot protection with Arcjet",
+        "Built an AI-powered finance automation app with OCR for expense extraction and personalized budgeting.",
+        "Implemented ETL-style recurring workflows using Inngest for automated data processing.",
+        "Designed analytical dashboards providing monthly financial insights.",
       ],
     },
-    // {
-    //   title: "Inventory Optimization & Sales Analytics | Slooze Take-Home Challenge",
-    //   date: "June 2025",
-    //   type: "Data Science Project",
-    //   technologies: ["Python", "Pandas", "Time-Series Analysis", "Data Visualization"],
-    //   github: "https://github.com/DivyangP2003/SloozeChallenge.git",
-    //   description: [
-    //     "Developed an end-to-end data science pipeline to perform demand forecasting, inventory optimization (EOQ, reorder points), and ABC classification of SKUs",
-    //     "Conducted exploratory data analysis on sales, purchase, and lead time data to uncover seasonal trends, top-performing products, and supplier performance insights"
-    //   ]
-    // },
+
+    // 7. Multimodal AI — Image + LLM
     {
-      title: "PulseMeet - Telemedicine Appointment App",
-      date: "June 2025",
-      type: "Full-Stack Project",
+      category: "Full-Stack",
+      title: "CookSmartAI — Multimodal AI Platform",
+      date: "Aug 2025",
+      type: "AI + Full-Stack",
       technologies: [
         "Next.js",
-        "Prisma ORM",
-        "Vonage Video API",
-        "PostgreSQL (Neon)",
+        "Prisma",
+        "Supabase",
+        "Gemini",
+        "Hugging Face",
+        "Pollination AI",
       ],
+      liveDemo: "https://cook-smart-ai.vercel.app",
+      github: "https://github.com/DivyangP2003/CookSmartAI",
+      description: [
+        "Developed a multimodal AI system for recipe generation, nutrition inference, and meal planning.",
+        "Implemented image-based ingredient recognition using HuggingFace and Pollination AI.",
+      ],
+    },
+
+    // 8. Deep Learning Project
+    {
+      category: "Data Science",
+      title: "Fake News Detection — LSTM",
+      date: "May 2025",
+      type: "Deep Learning",
+      technologies: ["Python", "TensorFlow", "NLP"],
+      github:
+        "https://github.com/DivyangP2003/Fake-News-Detection-with-TensorFlow",
+      description: [
+        "Trained an LSTM classifier achieving >90% accuracy for fake news classification.",
+        "Built preprocessing pipelines including tokenization, lemmatization, and embedding generation.",
+      ],
+    },
+
+    // 9. BI + Analytics Dashboard
+    {
+      category: "Data Science",
+      title: "Spotify Streaming Analytics Dashboard",
+      date: "May 2025",
+      type: "BI + Analytics",
+      technologies: ["Power BI", "DAX", "SQL"],
+      description: [
+        "Built a BI dashboard analyzing global streaming trends and popularity metrics.",
+        "Designed SQL + DAX transformations improving dashboard refresh time by 35%.",
+      ],
+    },
+
+    // 10. Telemedicine full-stack project
+    {
+      category: "Full-Stack",
+      title: "PulseMeet — Telemedicine Platform",
+      date: "Jun 2025",
+      type: "Full-Stack Engineering",
+      technologies: ["Next.js", "Prisma", "Vonage", "Clerk", "Stripe"],
       liveDemo: "https://pulsemeet.vercel.app",
       github: "https://github.com/DivyangP2003/pulsemeet",
       description: [
-        "Built PulseMeet, a full-stack telemedicine platform enabling patients to consult doctors via secure 1:1 video calls (Vonage), manage real-time appointment scheduling, and subscribe to credit-based plans using Clerk + Stripe",
-        "Integrated role-based access control (Patients, Doctors, Admins), Clerk authentication, Vonage encrypted video sessions, credit tracking, subscription management, and a payout system for doctors",
+        "Developed a secure telemedicine system enabling real-time video consultations.",
+        "Integrated role-based access control, payments, and appointment scheduling.",
+      ],
+    },
+
+    // 11. ML + UI Project
+    {
+      category: "AI",
+      title: "DrawAI — iPad Math Clone",
+      date: "Jun 2025",
+      type: "ML + Frontend",
+      technologies: ["Next.js", "Canvas", "TensorFlow.js"],
+      github: "https://github.com/DivyangP2003/draw-ai",
+      liveDemo: "https://draw-ai-ecru.vercel.app/",
+      description: [
+        "Built a real-time handwriting recognition canvas using TensorFlow.js.",
+        "Implemented mathematical parsing and instant equation solving.",
       ],
     },
   ];
 
   const skills = {
-    "Languages & Tools": [
+    "AI & Data Science": [
       "Python",
-      "JavaScript",
-      "C/C++",
+      "Pandas",
+      "NumPy",
+      "LLMs (Gemini, Llama, OpenAI)",
+      "AI Agents",
+      "LangChain",
+      "OCR",
+      "Data Visualization",
+    ],
+    "Data Engineering": [
       "SQL",
-      "React",
+      "PostgreSQL",
+      "MSSQL",
+      "BigQuery",
+      "Snowflake",
+      "ETL/ELT Pipelines",
+      "Data Modeling",
+      "Inngest",
+      "Orchestration",
+    ],
+    "Backend & Infrastructure": [
       "Node.js",
       "Express",
-      "Prisma",
-      "PostgreSQL",
       "REST APIs",
-    ],
-    Others: [
-      "Next.js",
+      "Prisma",
       "Supabase",
+      "Firebase",
+    ],
+    "Frontend & Full-Stack": [
+      "React",
+      "Next.js",
+      "JavaScript",
+      "TypeScript",
+      "Tailwind CSS",
+      "UI/UX Design",
+    ],
+    Tools: [
+      // "QGIS", "TRAZER",
+      "Git",
+      "Vercel",
       "Clerk",
-      "Stripe",
-      "Vonage API",
-      "Inngest",
       "Arcjet",
-      "QGIS",
-      "TRAZER",
-      "Data Analysis",
-      "AI/OCR",
+      "Stripe",
+      "Cron Jobs",
     ],
   };
 
@@ -214,11 +358,6 @@ export default function Resume() {
       title: "Head",
       organization: "Public Relation Team, EDIFICIO",
       year: "2023",
-    },
-    {
-      title: "Head",
-      organization: "UDBHAAS Exhibition",
-      year: "2022",
     },
   ];
 

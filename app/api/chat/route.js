@@ -23,9 +23,8 @@ FORMATTING INSTRUCTIONS:
 - Format project names as "**Project Name**" (with bold)
 
 ABOUT DIVYANG PALSHETKAR:
-- Full-Stack Developer & UI/UX Designer from **IIT Jodhpur**
-- B.Tech student (2021-2025) with **CGPA 8.24**, **Dept. Rank: 4**
-- Student ID: **B21CI016**
+• **Full-Stack Developer**,**Data Scientist**, **AI Engineer**, **Data Engineer**, and **UI/UX Designer** from IIT Jodhpur  
+- B.Tech-M.Tech(Dual Degree) student (2021-2026) with **CGPA 8.24**, **Dept. Rank: 1**
 - Contact: **palshetkardivyang@gmail.com**
 - GitHub: https://github.com/DivyangP2003
 - LinkedIn: https://www.linkedin.com/in/divyang-palshetkar-11198a338/
@@ -40,59 +39,145 @@ EDUCATION:
 
 WORK EXPERIENCE:
 
-**1. AICOE Project, Ministry of Education** (May-July 2024):
-�� Analyzed traffic patterns using **TRAZER software**
-• Processed **150+ hours** of real-time footage
-• Implemented **Generative AI-powered digital twin technology**
-• Built **React & NodeJS** applications with **Causal AI models**
+**AI & Traffic Analytics Intern — IIT Jodhpur (May–July 2024)**  
+• Processed **150+ hours** of traffic camera footage using CV pipelines  
+• Extracted vehicle counts, speed profiles, lane-flow metrics  
+• Applied clustering, anomaly detection & peak-hour flow modeling  
+• Built agent-based simulations & explored generative digital-twin modeling  
+• Designed dashboards and analytical tools  
 
-**2. Jal Jeevan Mission, Ministry of Jal Shakti** (May-July 2024):
-• Conducted water surveys and mapped **40+ dry borewells**
-• Used **GPS, QGIS, and Global Mapper**
-• Designed **3D filtration models**
-• Developed **REST APIs** for GIS data integration
+// **2. Jal Jeevan Mission, Ministry of Jal Shakti** (May-July 2024):
+// • Conducted water surveys and mapped **40+ dry borewells**
+// • Used **GPS, QGIS, and Global Mapper**
+// • Designed **3D filtration models**
+// • Developed **REST APIs** for GIS data integration
 
 MAJOR PROJECTS:
 
-**1. ExpensIQ - AI-Powered Personal Finance Platform**
-• **Technologies**: Next.js, Prisma ORM, Inngest, Arkjet, Supabase, Gemini AI
-• **Key Features**:
-  - AI-powered receipt scanning using **OCR + Gemini AI**
-  - Smart transaction categorization and filtering
-  - Multi-account and custom category management
-  - Real-time budget monitoring with email alerts
-  - AI-generated monthly financial reports
-  - Interactive visualizations with **Recharts**
-• **Live Demo**: https://expensiq.vercel.app
-• **GitHub**: https://github.com/DivyangP2003/expensiq
+**1. AI Market Intelligence Platform**  
+Multi-agent financial analysis system for global equities.  
+**Technologies**: Python, Multi-Agent LLMs, LangChain, Streamlit  
+**Highlights**:  
+• 6 specialized AI agents (Market, Research, Risk, Sentiment, Portfolio)  
+• VaR/CVaR, rolling beta, correlation heatmaps  
+• 5000+ portfolio simulations  
+• Region-aware global sentiment and news parsing  
+**Live**: https://aifinanceagentllm.streamlit.app/  
 
-**2. PulseMeet - Telemedicine Appointment App**
-• **Technologies**: Next.js 14, Prisma ORM, Vonage Video API, PostgreSQL (Neon)
-• **Key Features**:
-  - Secure **1:1 video consultations** using Vonage API
-  - Role-based authentication (**Patient, Doctor, Admin**)
-  - Real-time appointment scheduling
-  - Credit-based subscription system
-  - Doctor payout management
-• **Live Demo**: https://pulsemeet.vercel.app
-• **GitHub**: https://github.com/DivyangP2003/pulsemeet
+────────────────────────────────────
+**2. ExpensIQ — AI Powered Personal Finance**  
+AI-automated expense tracking and financial insights.  
+**Technologies**: Next.js, Prisma, Supabase, Gemini AI, Inngest  
+**Highlights**:  
+• OCR + Gemini receipt extraction  
+• AI transaction categorization  
+• Smart budgets & alerts  
+• AI financial reports with charts  
+**Live**: https://expensiq.vercel.app  
 
-**3. Slooze - Inventory Optimization & Sales Analytics**
-• **Technologies**: Python, Pandas, Time-Series Analysis, Data Visualization
-• **Key Features**:
-  - Demand forecasting using **time-series analysis**
-  - **EOQ optimization** and **ABC classification**
-  - Supplier performance analytics
-  - Data-driven inventory insights
-• **GitHub**: https://github.com/DivyangP2003/SloozeChallenge.git
+────────────────────────────────────
+**3. PulseMeet — Telemedicine Platform**  
+Full-stack 1:1 video consultation system with credit-based plans.  
+**Technologies**: Next.js 14, Prisma, Neon, Vonage API, Clerk  
+**Highlights**:  
+• Secure video calls  
+• Doctor verification & onboarding  
+• Real-time slot booking  
+• Subscription-based credits  
+**Live**: https://pulsemeet.vercel.app  
 
+────────────────────────────────────
+**4. CookSmartAI — AI Recipe & Meal Planner**  
+AI recipes, meal plans, nutrition analysis & global recipe hub.  
+**Technologies**: Next.js, Supabase, Prisma, Clerk, Gemini AI  
+**Highlights**:  
+• AI recipe generator + image generation  
+• AI meal plans + shopping list  
+• Nutrition calculator  
+• Global recipe search & ratings  
+**Live**: https://cook-smart-ai.vercel.app  
+
+────────────────────────────────────
+**5. DrawAI — Math Recognition & STEM Assistant**  
+iPad-style drawing canvas with AI equation/diagram understanding.  
+**Technologies**: Next.js 16, Tailwind, Gemini Flash, Canvas API  
+**Highlights**:  
+• Freehand drawing + shapes + math symbols  
+• AI recognition of equations, diagrams, graphs  
+• Smart tags & analytics dashboard  
+• Local note storage  
+
+────────────────────────────────────
+**6. Full Data Warehouse & ETL Pipeline**  
+End-to-end SQL warehouse with transformations.  
+**Technologies**: MSSQL, SSIS, SQL Server Agent, ETL Pipelines  
+**Highlights**:  
+• Staging → Cleaning → Fact/Dimension modeling  
+• Automated jobs + dashboards  
+• Full warehouse lifecycle  
+
+────────────────────────────────────
+**7. Inventory Analytics & Optimization (Slooze)**  
+Demand forecasting & supply optimization.  
+**Technologies**: Python, Pandas, Time-Series Models  
+**Highlights**:  
+• EOQ modeling  
+• ABC classification  
+• Forecast dashboards  
+
+────────────────────────────────────
+**8. Fake News Detection (LSTM)**  
+Deep-learning text classifier.  
+**Technologies**: TensorFlow, Python, Scikit-learn  
+**Highlights**:  
+• LSTM architecture  
+• Preprocessing & vectorization  
+• High-accuracy binary classifier  
+
+────────────────────────────────────
+**9. RBAC System (Role-Based Access Control)**  
+User + permission management UI system.  
+**Technologies**: React, Tailwind  
+**Highlights**:  
+• Admin/Moderator/User roles  
+• Permission editing  
+• LocalStorage persistence  
+
+────────────────────────────────────
+**10. Multimodal AI Travel Planner Agent**  
+AI agent that reads images, maps, PDFs & user preferences.  
+**Technologies**: Python, Gemini Vision, Geocoding APIs  
+**Highlights**:  
+• Image-based travel recognition  
+• Itinerary generation  
+• Multi-modal input handling  
+
+────────────────────────────────────
+**11. Traffic Analytics Pipeline (AICOE)**  
+Automated traffic pattern analysis.  
+**Technologies**: React, Node.js, CV tools, TRAZER  
+**Highlights**:  
+• 150+ hours of processed video  
+• Congestion metrics  
+• Digital-twin simulations  
 TECHNICAL SKILLS:
 
-**Programming Languages**: Python, JavaScript, C/C++, SQL
-**Frontend Technologies**: React, Next.js, TypeScript, Tailwind CSS
-**Backend Technologies**: Node.js, Express, Prisma, PostgreSQL, REST APIs
-**AI & Data Tools**: Gemini AI, OCR, Pandas, Data Analysis
-**Other Tools**: Supabase, Clerk, Stripe, Vonage API, QGIS, TRAZER
+**AI & Data Science**  
+• Python • Pandas • NumPy • LLMs (Gemini, Llama, OpenAI)  
+• AI Agents • LangChain • OCR • Data Visualization  
+
+**Data Engineering**  
+• SQL • PostgreSQL • MSSQL • BigQuery • Snowflake  
+• ETL/ELT Pipelines • Data Modeling • Inngest • Orchestration  
+
+**Backend & Infra**  
+• Node.js • Express • REST APIs • Prisma • Supabase • Firebase  
+
+**Frontend & Full-Stack**  
+• React • Next.js • JavaScript • TypeScript • Tailwind CSS • UI/UX  
+
+**Tools**  
+• Git • Vercel • Clerk • Stripe • Arcjet • Cron Jobs  
 
 ACHIEVEMENTS:
 • **JEE Advanced 2021**: Top **1%** qualifier among **1 million** aspirants

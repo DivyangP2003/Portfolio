@@ -408,10 +408,12 @@ export default function Hero3D() {
             initial={{ y: 50, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.7, delay: 0.4 }}
-            className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-8 max-w-3xl mx-auto"
+            className="text-xl md:text-xl text-gray-600 dark:text-gray-300 mb-8 max-w-4.5xl mx-auto"
           >
-            Full-Stack Developer & UI/UX Designer passionate about creating
-            beautiful, functional web experiences that make a difference.
+            Creating performant, data-driven applications and intelligent tools
+            end-to-end. 
+            <br />Turning complex datasets into intuitive interfaces,
+            meaningful insights, and robust production systems.
           </motion.p>
 
           <motion.div

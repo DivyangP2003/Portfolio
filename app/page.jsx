@@ -5,10 +5,11 @@ import Footer from "./_components/Footer";
 import Hero from "./_components/Hero";
 import Hero3D from "./_components/Hero3D";
 import Navigation from "./_components/Navigation";
-import Projects from "./_components/Projects";
+import FlagshipProjects from "./_components/FlagshipProjects";
 import Resume from "./_components/Resume";
-import Skills from "./_components/Skills";
+import SkillsMatrix from "./_components/SkillsMatrix";
 import Timeline from "./_components/Timeline";
+import Projects from "./_components/Projects";
 
 export default function Home() {
   return (
@@ -16,7 +17,7 @@ export default function Home() {
       <Navigation />
       <Hero3D />
       <About />
-      <Skills />
+      <SkillsMatrix />
       <Timeline />
       <Resume />
       <Projects />

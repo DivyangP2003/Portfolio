@@ -1,17 +1,17 @@
-"use client"
+"use client";
 
-import { ArrowDown, Github, Linkedin, Mail } from "lucide-react"
-import { Button } from "@/components/ui/button"
-import Image from "next/image"
-import { motion } from "framer-motion"
+import { ArrowDown, Github, Linkedin, Mail } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import Image from "next/image";
+import { motion } from "framer-motion";
 
 export default function Hero() {
   const scrollToAbout = () => {
-    const element = document.getElementById("about")
+    const element = document.getElementById("about");
     if (element) {
-      element.scrollIntoView({ behavior: "smooth" })
+      element.scrollIntoView({ behavior: "smooth" });
     }
-  }
+  };
 
   return (
     <section
@@ -53,8 +53,9 @@ export default function Hero() {
             transition={{ duration: 0.7, delay: 0.4 }}
             className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-8 max-w-3xl mx-auto"
           >
-            Full-Stack Developer & UI/UX Designer passionate about creating beautiful, functional web experiences that
-            make a difference.
+            Creating performant, data-driven applications and intelligent tools
+            end-to-end. Turning complex datasets into intuitive interfaces,
+            meaningful insights, and robust production systems.
           </motion.p>
 
           <motion.div
@@ -65,7 +66,9 @@ export default function Hero() {
           >
             <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
               <Button
-                onClick={() => (window.location.href = "mailto:palshetkardivyang@gmail.com")}
+                onClick={() =>
+                  (window.location.href = "mailto:palshetkardivyang@gmail.com")
+                }
                 size="lg"
                 className="bg-gradient-to-r from-cyan-500 via-blue-600 to-purple-600 hover:from-cyan-600 hover:via-blue-700 hover:to-purple-700 text-white shadow-lg"
               >
@@ -75,7 +78,9 @@ export default function Hero() {
             </motion.div>
             <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
               <Button
-                onClick={() => window.open("https://github.com/DivyangP2003", "_blank")}
+                onClick={() =>
+                  window.open("https://github.com/DivyangP2003", "_blank")
+                }
                 variant="outline"
                 size="lg"
                 className="dark:border-gray-600 dark:text-gray-300 bg-transparent"
@@ -94,7 +99,10 @@ export default function Hero() {
           >
             {[
               { icon: Github, href: "https://github.com/DivyangP2003" },
-              { icon: Linkedin, href: "https://www.linkedin.com/in/divyang-palshetkar-11198a338/" },
+              {
+                icon: Linkedin,
+                href: "https://www.linkedin.com/in/divyang-palshetkar-11198a338/",
+              },
               { icon: Mail, href: "mailto:palshetkardivyang@gmail.com" },
             ].map((social, index) => (
               <motion.a
@@ -122,5 +130,5 @@ export default function Hero() {
         </div>
       </div>
     </section>
-  )
+  );
 }
